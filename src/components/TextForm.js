@@ -59,10 +59,10 @@ export default function TextForm(props) {
   <textarea class="form-control" value ={text} onChange={handleOnChange} style ={{backgroundColor: props.mode === 'dark' ? 'rgb(3 13 20)':'white', color:props.mode === 'dark' ? 'white':'black'}}id="myBox" rows="8"></textarea>
 </div>
 <button class="btn btn-primary" onClick={handleUpClick}>Convert to uppercase</button>
-<button class="btn btn-primary mx-2" onClick={handleloClick}>Convert to lowerCase</button>
-<button class="btn btn-primary mx-2" onClick={handleClearClick}>Clear</button>
-<button class="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Space </button>
-<button class="btn btn-primary mx-2" onClick={speak} id="toogle">Speak</button>
+<button class="btn btn-primary mx-2 my-2" onClick={handleloClick}>Convert to lowerCase</button>
+<button class="btn btn-primary mx-2 my-2" onClick={handleClearClick}>Clear</button>
+<button class="btn btn-primary mx-2 my-2" onClick={handleExtraSpaces}>Remove Extra Space </button>
+<button class="btn btn-primary mx-2 my-2" onClick={speak} id="toogle">Speak</button>
     </div>
     <div class="container my-3 "style ={{color: props.mode === 'dark' ? 'white':'black'}}>
       <h2>Your text summary</h2>
